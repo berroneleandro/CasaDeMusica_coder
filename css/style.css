@@ -599,6 +599,10 @@ padding: 10px;
     .amplis{
         flex-direction: column;
     }
+    .productos_contenedor{
+        flex-direction: column;
+        height: auto;
+    }
     
 }
 
