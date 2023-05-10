@@ -11,7 +11,7 @@
 }
 
 .grid-contenedor{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -603,7 +603,19 @@ padding: 10px;
         flex-direction: column;
         height: auto;
     }
-    
+
+    .contenedor1{
+        width: 100%;
+    }
+    .contenedor3{
+        width: 100%;
+    }
+    .contenedor4{
+        width: 100%;
+    }
+    .contenedor5{
+        width: 100%;
+    }
 }
 
 
