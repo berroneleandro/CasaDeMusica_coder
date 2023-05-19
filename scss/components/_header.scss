@@ -1,0 +1,36 @@
+.encabezado{
+    background-color:rgb(65, 63, 63);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* padding: 5px; */
+    grid-area: header;
+    flex-direction: column;
+    h1{
+        font-style: oblique;
+        font: weight 100;
+        font-family: 'Bruno Ace SC', cursive;
+        color: rgb(247, 237, 102);
+        text-align: center;
+        padding: 10px;
+    
+
+    }
+    nav{
+        width: 100%;
+        color: rgb(247, 237, 102);
+
+        form{
+            button{
+
+                background-color: rgb(247, 230, 4);
+                &:hover{
+                    background-color: rgb(233, 10, 47);
+                }
+
+            }
+
+        }
+    }
+}

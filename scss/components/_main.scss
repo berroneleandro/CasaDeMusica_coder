@@ -1,0 +1,450 @@
+.principal{
+    grid-area: main;
+    background-image: url("../img/fon.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .hero{
+
+        h2{
+            font-size: 45px;
+            font-family: 'Bruno Ace SC', cursive;
+            color: rgb(247, 237, 102);
+            font-style:oblique;
+            text-align: center;
+            border: 2px rgb(168, 212, 7);
+
+        }
+
+        .hero_elementos{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 10px;
+            margin-top: 20px;    
+            p{
+                font-size: 20px;
+                color: rgb(240, 232, 232);
+                font-family: 'poppins';
+                padding: 10px;
+                text-align: center;
+
+            }
+        }
+    }
+
+    .hero_contactos{
+
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+
+        border: 2px  white solid;
+
+        h3{
+            font-family: 'Bruno Ace SC', cursive;
+            color: rgb(247, 237, 102);
+            font-style:oblique;
+            text-align: center;
+
+        }
+        p{
+            color: white;
+
+        }
+
+        a{
+            color: red;
+            padding: 5px;
+            font-style: normal,;
+        
+            font-family: 'Bruno Ace SC', cursive;
+            text-decoration: none;
+
+        }
+    }
+}
+
+/*!-----------------------productos------!*/
+
+.grid-contenedor-productos{
+    
+    .cuerdas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: #888888;
+        padding: 5px;
+       
+
+        .contenedor1{
+
+            width: 900px;
+            padding: 0;
+            background-image: url("../img/guitarras_p.jpg") ;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            h3{
+
+                opacity: 1;
+                background-color: #88888881;
+                text-align: center;
+                font-family: 'Bruno Ace SC', cursive;
+                color: rgb(247, 237, 102);
+                font-style:oblique;
+
+            }
+
+        }
+
+        .contenedor2{
+
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            height: auto;
+            p{
+                text-align: center;
+                 margin: 10px;
+
+            }
+            button{
+                margin: 10PX;
+                  text-align: center;
+
+            }
+        
+        }
+
+    }
+
+    .percucion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: #636363;
+        padding: 5px;
+        p{
+            text-align: center;
+            margin: 10px;
+        }
+
+        button{
+            margin: 10PX;
+            text-align: center;
+        }
+
+        .contenedor3{
+
+            width: 900px;
+            padding: 0;
+            background-image: url("../img/percucion.jpg") ;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+
+            h3{
+
+
+                opacity: 1;
+                background-color: #88888881;
+                text-align: center;
+                font-family: 'Bruno Ace SC', cursive;
+                color: rgb(247, 237, 102);
+                font-style:oblique;
+            }
+        }
+
+        .contenedor2{
+
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            height: auto;
+            p{
+                text-align: center;
+                 margin: 10px;
+
+            }
+            button{
+                margin: 10PX;
+                  text-align: center;
+
+            }
+        
+        }
+    }
+
+    .vientos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: #888888;
+        padding: 5px;
+        p{
+            text-align: center;
+            margin: 10px;
+        }
+
+        button{
+            margin: 10PX;
+            text-align: center;
+        }
+
+        .contenedor4{
+
+            width: 900px;
+            padding: 0;
+            background-image: url("../img/vientos.jpg") ;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+
+            h3{
+                opacity: 1;
+                background-color: #88888881;
+                text-align: center;
+                font-family: 'Bruno Ace SC', cursive;
+                color: rgb(247, 237, 102);
+                font-style:oblique;
+
+            }
+
+        }
+        .contenedor2{
+
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            height: auto;
+            p{
+                text-align: center;
+                 margin: 10px;
+
+            }
+            button{
+                margin: 10PX;
+                  text-align: center;
+
+            }
+        
+        }
+    }
+    .amplis{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: #636363;
+        padding: 5px;
+        p{
+            text-align: center;
+            margin: 10px;
+        }
+
+        button{
+            margin: 10PX;
+            text-align: center;
+        }
+
+        .contenedor5{
+            width: 900px;
+            padding: 0;
+            background-image: url("../img/amplificadores.jpg") ;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            
+            h3{
+                opacity: 1;
+                background-color: #88888881;
+                text-align: center;
+                font-family: 'Bruno Ace SC', cursive;
+                color: rgb(247, 237, 102);
+                font-style:oblique;
+
+            }
+        }
+        .contenedor2{
+
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            height: auto;
+            p{
+                text-align: center;
+                 margin: 10px;
+
+            }
+            button{
+                margin: 10PX;
+                  text-align: center;
+
+            }
+        
+        }
+    }
+
+    
+}
+
+//------------------acercade-----------//
+
+.grid-contenedor_acercade{
+
+    .principal_acercade{
+
+        
+        background-image: url("../img/fon.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        height: auto;
+        padding: 5px;
+        .hero{
+            h2{
+                font-size: 45px;
+                font-family: 'Bruno Ace SC', cursive;
+                color: rgb(247, 237, 102);
+                font-style:oblique;
+                text-align: center;
+                border: 2px rgb(168, 212, 7);
+
+            }
+            .hero_elementos{
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+                padding: 10px;
+                margin-top: 20px; 
+                            p{
+                                font-size: 20px;
+                                color: rgb(240, 232, 232);
+                                font-family: 'poppins';
+                                padding: 10px;
+                                text-align: center;
+
+                }
+
+            }
+            
+        }
+        .hero_contactos{
+            text-align: center;
+
+
+
+            padding: 10px;
+            margin: 10px;
+           
+            border: 2px  white solid;
+            h3{
+                font-family: 'Bruno Ace SC', cursive;
+                color: rgb(247, 237, 102);
+                font-style:oblique;
+                text-align: center;
+
+            }
+            p{
+                color: white;
+
+            }
+            a{
+                color: red;
+                padding: 5px;
+                font-style: normal,;
+               
+                font-family: 'Bruno Ace SC', cursive;
+                text-decoration: none;
+
+            }
+
+        }
+
+
+    }
+}
+
+
+
+//----------------------------contacto-----------//
+
+.formulario{
+      
+        padding: 5px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: darkgrey;
+    
+    .formulario_1{
+        h2{
+                        
+                font-family: 'Bruno Ace SC', cursive;
+                color: rgb(247, 237, 102);
+                text-align: center;
+                font-style: oblique;
+
+        }
+
+        form{
+
+            border: 1px black solid;
+            width: 250px;
+            height: 500px;
+            padding: 5px;
+            background-color: aliceblue;
+                
+        }
+
+    }
+
+    .mapa{
+
+        margin: 10px;
+        align-items: center;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+       
+    }
+}
+
+.video{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+
+    h2{
+          
+    font-size: 65px;
+   
+    font-family: 'Bruno Ace SC', cursive;
+    color: rgb(247, 237, 102);
+    text-align: center;
+    font-style: oblique;
+
+    }
+    div{
+        padding: 25px;
+
+    }
+}

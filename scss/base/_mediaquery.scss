@@ -1,0 +1,125 @@
+@media screen and (max-width:1050px) {
+
+    .grid-contenedor{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px  auto auto 50px;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "aside aside"
+        "footer footer"
+        ;
+
+        .hero p{
+            font-size: 12px;
+            text-align: center;
+        }
+    
+     
+    
+        .productos_contenedor{
+            display: flex;
+            flex-direction: row;
+            height: auto;
+    
+            .tarjetas{
+                margin: 15px;
+            }
+            
+          
+           
+            
+    
+        }
+    } 
+
+   
+
+    
+}
+
+@media screen and (max-width:800px){
+
+    .grid-contenedor{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px  auto auto 50px;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "aside aside"
+        "footer footer"
+        ;
+
+        .productos_contenedor{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+
+    }
+
+    .grid-contenedor-productos{
+        .cuerdas{
+            display: flex;
+            
+            flex-direction: column;
+    
+        }
+    
+    
+        .percucion{
+            flex-direction: column;
+            
+        }
+    
+        .vientos{
+            flex-direction: column;
+        }
+    
+        .amplis{
+            flex-direction: column;
+        }
+
+
+    }
+   
+
+
+ 
+    
+}
+
+@media screen and (max-width:580px) {
+
+    .grid-contenedor{
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto auto auto 50px ;
+        grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "footer"
+        ;
+
+        .encabezado{
+            position: static;
+        }
+    
+        
+    
+        .productos_contenedor{
+            flex-direction: column;
+            height: auto;
+        }
+    }
+    
+   
+}

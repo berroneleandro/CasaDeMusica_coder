@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:ital,wght@0,200;0,300;1,200&family=Roboto:wght@100&family=Tilt+Prism&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-contenedor{
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto  auto 50px;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer"
+    
+    ;
+}
+
+.grid-contenedor_acercade{
+
+    
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+    ;
+}
