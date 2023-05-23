@@ -1,17 +1,19 @@
 .productos{
 
-    background-color: dimgray;
-    
+    background: rgb(47,47,50);
+    background: linear-gradient(0deg, rgba(47,47,50,1) 0%, rgba(205,205,224,1) 49%, rgba(6,6,10,1) 100%); 
     grid-area: aside;
-    display: flex;
+    
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @extend %flex;
 
     h2{
 
         font-family: 'Bruno Ace SC', cursive;
-        color: rgb(247, 237, 102);
+        color: $color-titulo;
         text-align: center;
         padding: 10px;
         font-style: oblique;
@@ -26,7 +28,7 @@
         
         overflow-y: auto;
         align-items: center;
-        width: auto;
+        width: 300px;
         text-align: center;
 
         display: flex;
@@ -44,9 +46,10 @@
             justify-content: space-between;
             flex-direction: column;
             margin-top: 20px;
-            background-color: white;
-            box-shadow: 10px 10px 8px 10px #292828;
+            background-color: nth($colores,1 );
+           
             padding: 2px;
+            transition: 1s ;
 
             img{
                 width: 100%;
@@ -66,8 +69,8 @@
 
             }
             a{
-                background-color: rgb(248, 224, 5);
-                color: red;
+                background-color:nth($colores,4);
+                color:nth($colores,3);
                 padding: 5px;
                 margin: 5px;
                 font-style: normal,;
@@ -79,5 +82,12 @@
             }
 
         }
+
+        .tarjetas:hover{
+
+            transform: scale(1.1);
+            box-shadow: 10px 10px 8px 10px #292828;
+        }
+       
     }
 }

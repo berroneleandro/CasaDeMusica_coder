@@ -20,8 +20,14 @@
   color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
+.productos {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .encabezado {
-  background-color: #413f3f;
+  background: #111112;
+  background: radial-gradient(circle, #111112 0%, #73737d 41%, #303032 92%);
   position: sticky;
   top: 0;
   display: flex;
@@ -40,13 +46,13 @@
     width: 100%;
     color: #f7ed66; }
     .encabezado nav form button {
-      background-color: #f7e604; }
+      background-color: #f7ed66; }
       .encabezado nav form button:hover {
         background-color: #e90a2f; }
 
 .principal {
   grid-area: main;
-  background-image: url("../img/fon.avif");
+  background: linear-gradient(rgba(8, 8, 8, 0.349), rgba(8, 8, 8, 0.404)), url("../img/fon.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -65,15 +71,17 @@
     margin-top: 20px; }
     .principal .hero .hero_elementos p {
       font-size: 20px;
-      color: #f0e8e8;
+      color: white;
       font-family: 'poppins';
       padding: 10px;
-      text-align: center; }
+      text-align: center;
+      text-shadow: #636363; }
   .principal .hero_contactos {
     text-align: center;
     padding: 10px;
     margin: 10px;
-    border: 2px  white solid; }
+    border: 2px  white solid;
+    transition: 1s; }
     .principal .hero_contactos h3 {
       font-family: 'Bruno Ace SC', cursive;
       color: #f7ed66;
@@ -86,166 +94,366 @@
       padding: 5px;
       font-style: normal;
       font-family: 'Bruno Ace SC', cursive;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: 1s; }
+    .principal .hero_contactos a:hover {
+      transform: scale(3); }
 
 /*!-----------------------productos------!*/
-.grid-contenedor-productos .cuerdas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  background-color: #888888;
-  padding: 5px; }
-  .grid-contenedor-productos .cuerdas .contenedor1 {
-    width: 900px;
-    padding: 0;
-    background-image: url("../img/guitarras_p.jpg");
-    background-repeat: no-repeat;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    margin: 0; }
-    .grid-contenedor-productos .cuerdas .contenedor1 h3 {
-      opacity: 1;
-      background-color: #88888881;
-      text-align: center;
-      font-family: 'Bruno Ace SC', cursive;
-      color: #f7ed66;
-      font-style: oblique; }
-  .grid-contenedor-productos .cuerdas .contenedor2 {
+.grid-contenedor-productos {
+  background: #2f2f32;
+  background: linear-gradient(0deg, #2f2f32 0%, #cdcde0 49%, #06060a 100%); }
+  .grid-contenedor-productos .cuerdas {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: auto; }
-    .grid-contenedor-productos .cuerdas .contenedor2 p {
-      text-align: center;
-      margin: 10px; }
-    .grid-contenedor-productos .cuerdas .contenedor2 button {
-      margin: 10PX;
-      text-align: center; }
-
-.grid-contenedor-productos .percucion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  background-color: #636363;
-  padding: 5px; }
-  .grid-contenedor-productos .percucion p {
-    text-align: center;
-    margin: 10px; }
-  .grid-contenedor-productos .percucion button {
-    margin: 10PX;
-    text-align: center; }
-  .grid-contenedor-productos .percucion .contenedor3 {
-    width: 900px;
-    padding: 0;
-    background-image: url("../img/percucion.jpg");
-    background-repeat: no-repeat;
-    height: 400px;
-    background-size: cover;
-    background-position: center; }
-    .grid-contenedor-productos .percucion .contenedor3 h3 {
-      opacity: 1;
-      background-color: #88888881;
-      text-align: center;
-      font-family: 'Bruno Ace SC', cursive;
-      color: #f7ed66;
-      font-style: oblique; }
-  .grid-contenedor-productos .percucion .contenedor2 {
+    flex-direction: row;
+    padding: 5px; }
+    .grid-contenedor-productos .cuerdas .contenedor1 {
+      width: 450px;
+      padding: 0;
+      background-image: url("../img/guitarras_p.jpg");
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .grid-contenedor-productos .cuerdas .contenedor1 h3 {
+        opacity: 1;
+        background-color: #88888881;
+        text-align: center;
+        font-family: 'Bruno Ace SC', cursive;
+        color: #f7ed66;
+        font-style: oblique;
+        width: 100%; }
+      .grid-contenedor-productos .cuerdas .contenedor1 button {
+        margin: 5px; }
+    .grid-contenedor-productos .cuerdas .contenedor1:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 8px 10px #292828; }
+    .grid-contenedor-productos .cuerdas .contenedor2 {
+      width: 450px;
+      padding: 0;
+      background-image: url("../img/bajos.jpg");
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .grid-contenedor-productos .cuerdas .contenedor2 h3 {
+        opacity: 1;
+        background-color: #88888881;
+        text-align: center;
+        font-family: 'Bruno Ace SC', cursive;
+        color: #f7ed66;
+        font-style: oblique;
+        width: 100%; }
+      .grid-contenedor-productos .cuerdas .contenedor2 button {
+        margin: 5px; }
+    .grid-contenedor-productos .cuerdas .contenedor2:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 8px 10px #292828; }
+    .grid-contenedor-productos .cuerdas .contenedor3 {
+      width: 450px;
+      padding: 0;
+      background-image: url("../img/violines.jpg");
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .grid-contenedor-productos .cuerdas .contenedor3 h3 {
+        opacity: 1;
+        background-color: #88888881;
+        text-align: center;
+        font-family: 'Bruno Ace SC', cursive;
+        color: #f7ed66;
+        font-style: oblique;
+        width: 100%; }
+      .grid-contenedor-productos .cuerdas .contenedor3 button {
+        margin: 5px; }
+    .grid-contenedor-productos .cuerdas .contenedor3:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 8px 10px #292828; }
+  .grid-contenedor-productos .percucion {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: auto; }
-    .grid-contenedor-productos .percucion .contenedor2 p {
-      text-align: center;
-      margin: 10px; }
-    .grid-contenedor-productos .percucion .contenedor2 button {
-      margin: 10PX;
-      text-align: center; }
-
-.grid-contenedor-productos .vientos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  background-color: #888888;
-  padding: 5px; }
-  .grid-contenedor-productos .vientos p {
-    text-align: center;
-    margin: 10px; }
-  .grid-contenedor-productos .vientos button {
-    margin: 10PX;
-    text-align: center; }
-  .grid-contenedor-productos .vientos .contenedor4 {
-    width: 900px;
-    padding: 0;
-    background-image: url("../img/vientos.jpg");
-    background-repeat: no-repeat;
-    height: 400px;
-    background-size: cover;
-    background-position: center; }
-    .grid-contenedor-productos .vientos .contenedor4 h3 {
-      opacity: 1;
-      background-color: #88888881;
-      text-align: center;
-      font-family: 'Bruno Ace SC', cursive;
-      color: #f7ed66;
-      font-style: oblique; }
-  .grid-contenedor-productos .vientos .contenedor2 {
+    flex-direction: row;
+    padding: 5px; }
+    .grid-contenedor-productos .percucion .contenedor4 {
+      width: 450px;
+      padding: 0;
+      background-image: url("../img/baterias.jpg");
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .grid-contenedor-productos .percucion .contenedor4 h3 {
+        opacity: 1;
+        background-color: #88888881;
+        text-align: center;
+        font-family: 'Bruno Ace SC', cursive;
+        color: #f7ed66;
+        font-style: oblique;
+        width: 100%; }
+      .grid-contenedor-productos .percucion .contenedor4 button {
+        margin: 5px; }
+    .grid-contenedor-productos .percucion .contenedor4:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 8px 10px #292828; }
+    .grid-contenedor-productos .percucion .contenedor5 {
+      width: 450px;
+      padding: 0;
+      background-image: url("../img/bombos.jpg");
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .grid-contenedor-productos .percucion .contenedor5 h3 {
+        opacity: 1;
+        background-color: #88888881;
+        text-align: center;
+        font-family: 'Bruno Ace SC', cursive;
+        color: #f7ed66;
+        font-style: oblique;
+        width: 100%; }
+      .grid-contenedor-productos .percucion .contenedor5 button {
+        margin: 5px; }
+    .grid-contenedor-productos .percucion .contenedor5:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 8px 10px #292828; }
+    .grid-contenedor-productos .percucion .contenedor6 {
+      width: 450px;
+      padding: 0;
+      background-image: url("../img/timbales.jpg");
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .grid-contenedor-productos .percucion .contenedor6 h3 {
+        opacity: 1;
+        background-color: #88888881;
+        text-align: center;
+        font-family: 'Bruno Ace SC', cursive;
+        color: #f7ed66;
+        font-style: oblique;
+        width: 100%; }
+      .grid-contenedor-productos .percucion .contenedor6 button {
+        margin: 5px; }
+    .grid-contenedor-productos .percucion .contenedor6:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 8px 10px #292828; }
+  .grid-contenedor-productos .Vientos {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: auto; }
-    .grid-contenedor-productos .vientos .contenedor2 p {
-      text-align: center;
-      margin: 10px; }
-    .grid-contenedor-productos .vientos .contenedor2 button {
-      margin: 10PX;
-      text-align: center; }
-
-.grid-contenedor-productos .amplis {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  background-color: #636363;
-  padding: 5px; }
-  .grid-contenedor-productos .amplis p {
-    text-align: center;
-    margin: 10px; }
-  .grid-contenedor-productos .amplis button {
-    margin: 10PX;
-    text-align: center; }
-  .grid-contenedor-productos .amplis .contenedor5 {
-    width: 900px;
-    padding: 0;
-    background-image: url("../img/amplificadores.jpg");
-    background-repeat: no-repeat;
-    height: 400px;
-    background-size: cover;
-    background-position: center; }
-    .grid-contenedor-productos .amplis .contenedor5 h3 {
-      opacity: 1;
-      background-color: #88888881;
-      text-align: center;
-      font-family: 'Bruno Ace SC', cursive;
-      color: #f7ed66;
-      font-style: oblique; }
-  .grid-contenedor-productos .amplis .contenedor2 {
+    flex-direction: row;
+    padding: 5px; }
+    .grid-contenedor-productos .Vientos .contenedor7 {
+      width: 450px;
+      padding: 0;
+      background-image: url("../img/vientos.jpg");
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .grid-contenedor-productos .Vientos .contenedor7 h3 {
+        opacity: 1;
+        background-color: #88888881;
+        text-align: center;
+        font-family: 'Bruno Ace SC', cursive;
+        color: #f7ed66;
+        font-style: oblique;
+        width: 100%; }
+      .grid-contenedor-productos .Vientos .contenedor7 button {
+        margin: 5px; }
+    .grid-contenedor-productos .Vientos .contenedor7:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 8px 10px #292828; }
+    .grid-contenedor-productos .Vientos .contenedor8 {
+      width: 450px;
+      padding: 0;
+      background-image: url("../img/trompetas.jpg");
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .grid-contenedor-productos .Vientos .contenedor8 h3 {
+        opacity: 1;
+        background-color: #88888881;
+        text-align: center;
+        font-family: 'Bruno Ace SC', cursive;
+        color: #f7ed66;
+        font-style: oblique;
+        width: 100%; }
+      .grid-contenedor-productos .Vientos .contenedor8 button {
+        margin: 5px; }
+    .grid-contenedor-productos .Vientos .contenedor8:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 8px 10px #292828; }
+    .grid-contenedor-productos .Vientos .contenedor9 {
+      width: 450px;
+      padding: 0;
+      background-image: url("../img/trombon.jpg");
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .grid-contenedor-productos .Vientos .contenedor9 h3 {
+        opacity: 1;
+        background-color: #88888881;
+        text-align: center;
+        font-family: 'Bruno Ace SC', cursive;
+        color: #f7ed66;
+        font-style: oblique;
+        width: 100%; }
+      .grid-contenedor-productos .Vientos .contenedor9 button {
+        margin: 5px; }
+    .grid-contenedor-productos .Vientos .contenedor9:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 8px 10px #292828; }
+  .grid-contenedor-productos .amplis {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: auto; }
-    .grid-contenedor-productos .amplis .contenedor2 p {
-      text-align: center;
-      margin: 10px; }
-    .grid-contenedor-productos .amplis .contenedor2 button {
-      margin: 10PX;
-      text-align: center; }
+    flex-direction: row;
+    padding: 5px; }
+    .grid-contenedor-productos .amplis .contenedor10 {
+      width: 450px;
+      padding: 0;
+      background-image: url("../img/amplificadores.jpg");
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .grid-contenedor-productos .amplis .contenedor10 h3 {
+        opacity: 1;
+        background-color: #88888881;
+        text-align: center;
+        font-family: 'Bruno Ace SC', cursive;
+        color: #f7ed66;
+        font-style: oblique;
+        width: 100%; }
+      .grid-contenedor-productos .amplis .contenedor10 button {
+        margin: 5px; }
+    .grid-contenedor-productos .amplis .contenedor10:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 8px 10px #292828; }
+    .grid-contenedor-productos .amplis .contenedor11 {
+      width: 450px;
+      padding: 0;
+      background-image: url("../img/consolas.jpg");
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .grid-contenedor-productos .amplis .contenedor11 h3 {
+        opacity: 1;
+        background-color: #88888881;
+        text-align: center;
+        font-family: 'Bruno Ace SC', cursive;
+        color: #f7ed66;
+        font-style: oblique;
+        width: 100%; }
+      .grid-contenedor-productos .amplis .contenedor11 button {
+        margin: 5px; }
+    .grid-contenedor-productos .amplis .contenedor11:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 8px 10px #292828; }
+    .grid-contenedor-productos .amplis .contenedor12 {
+      width: 450px;
+      padding: 0;
+      background-image: url("../img/microfonos.jpg");
+      background-repeat: no-repeat;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .grid-contenedor-productos .amplis .contenedor12 h3 {
+        opacity: 1;
+        background-color: #88888881;
+        text-align: center;
+        font-family: 'Bruno Ace SC', cursive;
+        color: #f7ed66;
+        font-style: oblique;
+        width: 100%; }
+      .grid-contenedor-productos .amplis .contenedor12 button {
+        margin: 5px; }
+    .grid-contenedor-productos .amplis .contenedor12:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 8px 10px #292828; }
 
 .grid-contenedor_acercade .principal_acercade {
-  background-image: url("../img/fon.avif");
+  background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.568)), url("../img/fon.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -266,7 +474,7 @@
     margin-top: 20px; }
     .grid-contenedor_acercade .principal_acercade .hero .hero_elementos p {
       font-size: 20px;
-      color: #f0e8e8;
+      color: white;
       font-family: 'poppins';
       padding: 10px;
       text-align: center; }
@@ -287,14 +495,18 @@
       padding: 5px;
       font-style: normal;
       font-family: 'Bruno Ace SC', cursive;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: 1s; }
+    .grid-contenedor_acercade .principal_acercade .hero_contactos a:hover {
+      transform: scale(2); }
 
 .formulario {
   padding: 5px;
-  align-items: center;
   display: flex;
   flex-direction: column;
-  background-color: darkgrey; }
+  align-items: center;
+  background: #2f2f32;
+  background: linear-gradient(0deg, #2f2f32 0%, #cdcde0 49%, #06060a 100%); }
   .formulario .formulario_1 h2 {
     font-family: 'Bruno Ace SC', cursive;
     color: #f7ed66;
@@ -316,9 +528,10 @@
 .video {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: darkgray; }
+  align-items: center;
+  background: #2f2f32;
+  background: linear-gradient(0deg, #2f2f32 0%, #cdcde0 49%, #06060a 100%); }
   .video h2 {
     font-size: 65px;
     font-family: 'Bruno Ace SC', cursive;
@@ -329,12 +542,10 @@
     padding: 25px; }
 
 .productos {
-  background-color: dimgray;
+  background: #2f2f32;
+  background: linear-gradient(0deg, #2f2f32 0%, #cdcde0 49%, #06060a 100%);
   grid-area: aside;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column; }
   .productos h2 {
     font-family: 'Bruno Ace SC', cursive;
     color: #f7ed66;
@@ -348,7 +559,7 @@
     height: 900px;
     overflow-y: auto;
     align-items: center;
-    width: auto;
+    width: 300px;
     text-align: center;
     display: flex;
     flex-direction: column; }
@@ -363,8 +574,8 @@
       flex-direction: column;
       margin-top: 20px;
       background-color: white;
-      box-shadow: 10px 10px 8px 10px #292828;
-      padding: 2px; }
+      padding: 2px;
+      transition: 1s; }
       .productos .productos_contenedor .tarjetas img {
         width: 100%;
         height: 250px; }
@@ -385,9 +596,12 @@
         font-family: 'Bruno Ace SC', cursive;
         text-decoration: none;
         box-shadow: 2px 2px 1px 2px #888888; }
+    .productos .productos_contenedor .tarjetas:hover {
+      transform: scale(1.1);
+      box-shadow: 10px 10px 8px 10px #292828; }
 
 .redes {
-  background-color: #524d4d;
+  background-color: #413f3f;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -409,9 +623,19 @@
     .grid-contenedor .productos_contenedor {
       display: flex;
       flex-direction: row;
-      height: auto; }
+      height: auto;
+      width: auto; }
       .grid-contenedor .productos_contenedor .tarjetas {
-        margin: 15px; } }
+        margin: 15px; }
+  .grid-contenedor-productos .cuerdas {
+    display: flex;
+    flex-direction: column; }
+  .grid-contenedor-productos .percucion {
+    flex-direction: column; }
+  .grid-contenedor-productos .Vientos {
+    flex-direction: column; }
+  .grid-contenedor-productos .amplis {
+    flex-direction: column; } }
 
 @media screen and (max-width: 800px) {
   .grid-contenedor {
@@ -446,4 +670,5 @@
       position: static; }
     .grid-contenedor .productos_contenedor {
       flex-direction: column;
-      height: auto; } }
+      height: auto;
+      width: auto; } }

@@ -1,5 +1,6 @@
 .encabezado{
-    background-color:rgb(65, 63, 63);
+    background: rgb(17,17,18);
+    background: radial-gradient(circle, rgba(17,17,18,1) 0%, rgba(115,115,125,1) 41%, rgba(48,48,50,1) 92%);
     position: sticky;
     top: 0;
     display: flex;
@@ -11,7 +12,7 @@
         font-style: oblique;
         font: weight 100;
         font-family: 'Bruno Ace SC', cursive;
-        color: rgb(247, 237, 102);
+        color:$color-titulo;
         text-align: center;
         padding: 10px;
     
@@ -19,12 +20,12 @@
     }
     nav{
         width: 100%;
-        color: rgb(247, 237, 102);
+        color: $color-titulo;
 
         form{
             button{
 
-                background-color: rgb(247, 230, 4);
+                background-color: $color-titulo;
                 &:hover{
                     background-color: rgb(233, 10, 47);
                 }

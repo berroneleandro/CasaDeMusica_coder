@@ -1,6 +1,6 @@
 .principal{
     grid-area: main;
-    background-image: url("../img/fon.avif");
+    background:linear-gradient(rgba(8, 8, 8, 0.349),rgba(8, 8, 8, 0.404)), url("../img/fon.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,9 +8,9 @@
     .hero{
 
         h2{
-            font-size: 45px;
+            font-size: nth($font-size,3);
             font-family: 'Bruno Ace SC', cursive;
-            color: rgb(247, 237, 102);
+            color:$color-titulo;
             font-style:oblique;
             text-align: center;
             border: 2px rgb(168, 212, 7);
@@ -18,17 +18,19 @@
         }
 
         .hero_elementos{
-            display: flex;
-            justify-content:space-between;
-            align-items: center;
+            // display: flex;
+            // justify-content:space-between;
+            // align-items: center;
+            @include flex(flex,space-between,center);
             padding: 10px;
             margin-top: 20px;    
             p{
-                font-size: 20px;
-                color: rgb(240, 232, 232);
+                font-size: nth($font-size , 2);
+                color: nth($colores,1);
                 font-family: 'poppins';
                 padding: 10px;
                 text-align: center;
+                text-shadow: #636363;
 
             }
         }
@@ -41,10 +43,11 @@
         margin: 10px;
 
         border: 2px  white solid;
+        transition: 1s;
 
         h3{
             font-family: 'Bruno Ace SC', cursive;
-            color: rgb(247, 237, 102);
+            color: $color-titulo;
             font-style:oblique;
             text-align: center;
 
@@ -55,251 +58,535 @@
         }
 
         a{
-            color: red;
+            color:nth($colores,3);
             padding: 5px;
             font-style: normal,;
         
             font-family: 'Bruno Ace SC', cursive;
             text-decoration: none;
+            transition: 1s;
 
         }
+        a:hover{
+            transform: scale(3);
+        }
     }
+
+    
 }
 
 /*!-----------------------productos------!*/
 
 .grid-contenedor-productos{
+    background: rgb(47,47,50);
+    background: linear-gradient(0deg, rgba(47,47,50,1) 0%, rgba(205,205,224,1) 49%, rgba(6,6,10,1) 100%); 
     
     .cuerdas{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        @include flex(flex,space-between,center);
         flex-direction: row;
-        background-color: #888888;
+        
         padding: 5px;
        
 
         .contenedor1{
 
-            width: 900px;
+            width: 450px;
             padding: 0;
             background-image: url("../img/guitarras_p.jpg") ;
             background-repeat: no-repeat;
             height: 400px;
             background-size: cover;
             background-position: center;
-            margin: 0;
+            margin: 5px;
+            @include flex(flex,space-between,center);
+            flex-direction: column;
+            transition: 1s;
+
+
+
             h3{
 
                 opacity: 1;
                 background-color: #88888881;
                 text-align: center;
                 font-family: 'Bruno Ace SC', cursive;
-                color: rgb(247, 237, 102);
+                color: $color-titulo;
                 font-style:oblique;
+                width: 100%;
 
             }
+            button{
+                margin: 5px;
+                
+            }
+
+        }
+
+        .contenedor1:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px 10px #292828;
 
         }
 
         .contenedor2{
 
-            display: flex;
-            flex-direction: column;
-            
-            align-items: center;
-            height: auto;
-            p{
-                text-align: center;
-                 margin: 10px;
-
-            }
-            button{
-                margin: 10PX;
-                  text-align: center;
-
-            }
-        
-        }
-
-    }
-
-    .percucion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        background-color: #636363;
-        padding: 5px;
-        p{
-            text-align: center;
-            margin: 10px;
-        }
-
-        button{
-            margin: 10PX;
-            text-align: center;
-        }
-
-        .contenedor3{
-
-            width: 900px;
+            width: 450px;
             padding: 0;
-            background-image: url("../img/percucion.jpg") ;
+            background-image: url("../img/bajos.jpg") ;
             background-repeat: no-repeat;
             height: 400px;
             background-size: cover;
             background-position: center;
+            margin: 5px;
+            @include flex(flex,space-between,center);
+            flex-direction: column;
+            transition: 1s;
+
+
 
             h3{
-
 
                 opacity: 1;
                 background-color: #88888881;
                 text-align: center;
                 font-family: 'Bruno Ace SC', cursive;
-                color: rgb(247, 237, 102);
+                color: $color-titulo;
                 font-style:oblique;
-            }
-        }
-
-        .contenedor2{
-
-            display: flex;
-            flex-direction: column;
-            
-            align-items: center;
-            height: auto;
-            p{
-                text-align: center;
-                 margin: 10px;
+                width: 100%;
 
             }
             button{
-                margin: 10PX;
-                  text-align: center;
+                margin: 5px;
+                
+            }
+
+        }
+        .contenedor2:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px 10px #292828;
+
+        }
+
+        .contenedor3{
+
+            width: 450px;
+            padding: 0;
+            background-image: url("../img/violines.jpg") ;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+            @include flex(flex,space-between,center);
+            flex-direction: column;
+            transition: 1s;
+
+
+
+            h3{
+
+                opacity: 1;
+                background-color: #88888881;
+                text-align: center;
+                font-family: 'Bruno Ace SC', cursive;
+                color: $color-titulo;
+                font-style:oblique;
+                width: 100%;
 
             }
-        
+            button{
+                margin: 5px;
+                
+            }
+
         }
+        .contenedor3:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px 10px #292828;
+
+        }
+
     }
 
-    .vientos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+     .percucion{
+    
+        @include flex(flex,space-between,center);
         flex-direction: row;
-        background-color: #888888;
+        
         padding: 5px;
-        p{
-            text-align: center;
-            margin: 10px;
-        }
-
-        button{
-            margin: 10PX;
-            text-align: center;
-        }
+       
 
         .contenedor4{
 
-            width: 900px;
+            width: 450px;
+            padding: 0;
+            background-image: url("../img/baterias.jpg") ;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+            @include flex(flex,space-between,center);
+            flex-direction: column;
+            transition: 1s;
+
+
+
+            h3{
+
+                opacity: 1;
+                background-color: #88888881;
+                text-align: center;
+                font-family: 'Bruno Ace SC', cursive;
+                color: $color-titulo;
+                font-style:oblique;
+                width: 100%;
+
+            }
+            button{
+                margin: 5px;
+                
+            }
+
+        }
+        .contenedor4:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px 10px #292828;
+
+        }
+
+        .contenedor5{
+
+            width: 450px;
+            padding: 0;
+            background-image: url("../img/bombos.jpg") ;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+            @include flex(flex,space-between,center);
+            flex-direction: column;
+            transition: 1s;
+
+
+
+            h3{
+
+                opacity: 1;
+                background-color: #88888881;
+                text-align: center;
+                font-family: 'Bruno Ace SC', cursive;
+                color: $color-titulo;
+                font-style:oblique;
+                width: 100%;
+
+            }
+            button{
+                margin: 5px;
+                
+            }
+
+        }
+        .contenedor5:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px 10px #292828;
+
+        }
+
+        .contenedor6{
+
+            width: 450px;
+            padding: 0;
+            background-image: url("../img/timbales.jpg") ;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+            @include flex(flex,space-between,center);
+            flex-direction: column;
+            transition: 1s;
+
+
+
+            h3{
+
+                opacity: 1;
+                background-color: #88888881;
+                text-align: center;
+                font-family: 'Bruno Ace SC', cursive;
+                color: $color-titulo;
+                font-style:oblique;
+                width: 100%;
+
+            }
+            button{
+                margin: 5px;
+                
+            }
+
+        }
+        .contenedor6:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px 10px #292828;
+
+        }
+
+    }
+    .Vientos{
+        @include flex(flex,space-between,center);
+        flex-direction: row;
+        
+        padding: 5px;
+       
+
+        .contenedor7{
+
+            width: 450px;
             padding: 0;
             background-image: url("../img/vientos.jpg") ;
             background-repeat: no-repeat;
             height: 400px;
             background-size: cover;
             background-position: center;
+            margin: 5px;
+            @include flex(flex,space-between,center);
+            flex-direction: column;
+            transition: 1s;
+
+
 
             h3{
+
                 opacity: 1;
                 background-color: #88888881;
                 text-align: center;
                 font-family: 'Bruno Ace SC', cursive;
-                color: rgb(247, 237, 102);
+                color: $color-titulo;
                 font-style:oblique;
-
-            }
-
-        }
-        .contenedor2{
-
-            display: flex;
-            flex-direction: column;
-            
-            align-items: center;
-            height: auto;
-            p{
-                text-align: center;
-                 margin: 10px;
+                width: 100%;
 
             }
             button{
-                margin: 10PX;
-                  text-align: center;
+                margin: 5px;
+                
+            }
+
+        }
+
+        .contenedor7:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px 10px #292828;
+
+        }
+
+        .contenedor8{
+
+            width: 450px;
+            padding: 0;
+            background-image: url("../img/trompetas.jpg") ;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+            @include flex(flex,space-between,center);
+            flex-direction: column;
+            transition: 1s;
+
+
+
+            h3{
+
+                opacity: 1;
+                background-color: #88888881;
+                text-align: center;
+                font-family: 'Bruno Ace SC', cursive;
+                color: $color-titulo;
+                font-style:oblique;
+                width: 100%;
 
             }
-        
+            button{
+                margin: 5px;
+                
+            }
+
         }
+        .contenedor8:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px 10px #292828;
+
+        }
+
+        .contenedor9{
+
+            width: 450px;
+            padding: 0;
+            background-image: url("../img/trombon.jpg") ;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+            @include flex(flex,space-between,center);
+            flex-direction: column;
+            transition: 1s;
+
+
+
+            h3{
+
+                opacity: 1;
+                background-color: #88888881;
+                text-align: center;
+                font-family: 'Bruno Ace SC', cursive;
+                color: $color-titulo;
+                font-style:oblique;
+                width: 100%;
+
+            }
+            button{
+                margin: 5px;
+                
+            }
+
+        }
+        .contenedor9:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px 10px #292828;
+
+        }
+
     }
-    .amplis{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+     .amplis{
+        @include flex(flex,space-between,center);
         flex-direction: row;
-        background-color: #636363;
+        
         padding: 5px;
-        p{
-            text-align: center;
-            margin: 10px;
-        }
+       
 
-        button{
-            margin: 10PX;
-            text-align: center;
-        }
+        .contenedor10{
 
-        .contenedor5{
-            width: 900px;
+            width: 450px;
             padding: 0;
             background-image: url("../img/amplificadores.jpg") ;
             background-repeat: no-repeat;
             height: 400px;
             background-size: cover;
             background-position: center;
-            
+            margin: 5px;
+            @include flex(flex,space-between,center);
+            flex-direction: column;
+            transition: 1s;
+
+
+
             h3{
+
                 opacity: 1;
                 background-color: #88888881;
                 text-align: center;
                 font-family: 'Bruno Ace SC', cursive;
-                color: rgb(247, 237, 102);
+                color: $color-titulo;
                 font-style:oblique;
-
-            }
-        }
-        .contenedor2{
-
-            display: flex;
-            flex-direction: column;
-            
-            align-items: center;
-            height: auto;
-            p{
-                text-align: center;
-                 margin: 10px;
+                width: 100%;
 
             }
             button{
-                margin: 10PX;
-                  text-align: center;
+                margin: 5px;
+                
+            }
+
+        }
+        .contenedor10:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px 10px #292828;
+
+        }
+
+        .contenedor11{
+
+            width: 450px;
+            padding: 0;
+            background-image: url("../img/consolas.jpg") ;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+            @include flex(flex,space-between,center);
+            flex-direction: column;
+            transition: 1s;
+
+
+
+            h3{
+
+                opacity: 1;
+                background-color: #88888881;
+                text-align: center;
+                font-family: 'Bruno Ace SC', cursive;
+                color: $color-titulo;
+                font-style:oblique;
+                width: 100%;
 
             }
-        
-        }
-    }
+            button{
+                margin: 5px;
+                
+            }
 
-    
+        }
+        .contenedor11:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px 10px #292828;
+
+        }
+
+        .contenedor12{
+
+            width: 450px;
+            padding: 0;
+            background-image: url("../img/microfonos.jpg") ;
+            background-repeat: no-repeat;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin: 5px;
+            @include flex(flex,space-between,center);
+            flex-direction: column;
+            transition: 1s;
+
+
+
+            h3{
+
+                opacity: 1;
+                background-color: #88888881;
+                text-align: center;
+                font-family: 'Bruno Ace SC', cursive;
+                color: $color-titulo;
+                font-style:oblique;
+                width: 100%;
+
+            }
+            button{
+                margin: 5px;
+                
+            }
+
+        }
+        .contenedor12:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 8px 10px #292828;
+
+        }
+     }
 }
 
 //------------------acercade-----------//
@@ -309,7 +596,7 @@
     .principal_acercade{
 
         
-        background-image: url("../img/fon.avif");
+        background:linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.568)), url("../img/fon.avif");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -318,7 +605,7 @@
         padding: 5px;
         .hero{
             h2{
-                font-size: 45px;
+                font-size: nth($font-size,3);
                 font-family: 'Bruno Ace SC', cursive;
                 color: rgb(247, 237, 102);
                 font-style:oblique;
@@ -327,14 +614,15 @@
 
             }
             .hero_elementos{
-                display: flex;
-                justify-content:space-between;
-                align-items: center;
+                // display: flex;
+                // justify-content:space-between;
+                // align-items: center;
+                @include flex(flex,space-between,center);
                 padding: 10px;
                 margin-top: 20px; 
                             p{
                                 font-size: 20px;
-                                color: rgb(240, 232, 232);
+                                color: nth($colores,1 );
                                 font-family: 'poppins';
                                 padding: 10px;
                                 text-align: center;
@@ -355,23 +643,27 @@
             border: 2px  white solid;
             h3{
                 font-family: 'Bruno Ace SC', cursive;
-                color: rgb(247, 237, 102);
+                color: $color-titulo;
                 font-style:oblique;
                 text-align: center;
 
             }
             p{
-                color: white;
+                color: nth($colores,1 );
 
             }
             a{
-                color: red;
+                color:nth($colores,3);
                 padding: 5px;
                 font-style: normal,;
                
                 font-family: 'Bruno Ace SC', cursive;
                 text-decoration: none;
+                transition: 1s;
 
+            }
+            a:hover{
+                transform: scale(2);
             }
 
         }
@@ -387,16 +679,18 @@
 .formulario{
       
         padding: 5px;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        background-color: darkgrey;
-    
+        // align-items: center;
+        // display: flex;
+        // flex-direction: column;
+
+        @include flex-direction(flex,column,center);
+        background: rgb(47,47,50);
+        background: linear-gradient(0deg, rgba(47,47,50,1) 0%, rgba(205,205,224,1) 49%, rgba(6,6,10,1) 100%);
     .formulario_1{
         h2{
                         
                 font-family: 'Bruno Ace SC', cursive;
-                color: rgb(247, 237, 102);
+                color: $color-titulo;
                 text-align: center;
                 font-style: oblique;
 
@@ -427,18 +721,20 @@
 
 .video{
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    @include flex-direction(flex,column,center);
     align-items: center;
-    background-color: darkgray;
+    background: rgb(47,47,50);
+    background: linear-gradient(0deg, rgba(47,47,50,1) 0%, rgba(205,205,224,1) 49%, rgba(6,6,10,1) 100%); 
 
     h2{
           
     font-size: 65px;
    
     font-family: 'Bruno Ace SC', cursive;
-    color: rgb(247, 237, 102);
+    color: $color-titulo;
     text-align: center;
     font-style: oblique;
 

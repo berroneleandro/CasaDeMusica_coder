@@ -1,0 +1,39 @@
+$color-principal:dimgray;
+$color-titulo: rgb(247, 237, 102);
+
+$colores: 
+white,
+black,
+red,
+rgb(248, 224, 5),
+rgb(65, 63, 63);
+
+
+
+$font-size: 
+
+12px,
+20px,
+45px
+;
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex ($flex,$justify,$aling){
+    display: $flex;
+    justify-content:$justify;
+    align-items: $aling;
+}
+
+@mixin flex-direction($flex,$flex-direction,$aling){
+    display: $flex;
+    flex-direction: $flex-direction;
+    align-items: $aling;
+}
+
+
+
