@@ -13,7 +13,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto  auto 50px;
+    grid-template-rows: auto  700px 50px;
     grid-template-areas: 
     "header header header"
     "main main aside"

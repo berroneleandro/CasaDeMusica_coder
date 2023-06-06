@@ -5,9 +5,7 @@
     grid-area: aside;
     
     flex-direction: column;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+
     @extend %flex;
 
     h2{
@@ -85,7 +83,7 @@
 
         .tarjetas:hover{
 
-            transform: scale(1.1);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
         }
        

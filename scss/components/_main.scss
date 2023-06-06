@@ -3,27 +3,41 @@
     background:linear-gradient(rgba(8, 8, 8, 0.349),rgba(8, 8, 8, 0.404)), url("../img/fon.avif");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;background-color:rgb(136, 131, 131);
+    
+    margin: 0;
+   
+
+    
+
+    
+
+
+    h2{
+        font-size: nth($font-size,3);
+        font-family: 'Bruno Ace SC', cursive;
+        color:$color-titulo;
+        font-style:oblique;
+        text-align: center;
+        border: 2px rgb(168, 212, 7);
+        
+        
+        
+        
+
+    }
+
 
     .hero{
+        
 
-        h2{
-            font-size: nth($font-size,3);
-            font-family: 'Bruno Ace SC', cursive;
-            color:$color-titulo;
-            font-style:oblique;
-            text-align: center;
-            border: 2px rgb(168, 212, 7);
-
-        }
+        
 
         .hero_elementos{
-            // display: flex;
-            // justify-content:space-between;
-            // align-items: center;
-            @include flex(flex,space-between,center);
+            
+            
             padding: 10px;
-            margin-top: 20px;    
+            margin: 10px;    
             p{
                 font-size: nth($font-size , 2);
                 color: nth($colores,1);
@@ -31,6 +45,8 @@
                 padding: 10px;
                 text-align: center;
                 text-shadow: #636363;
+                margin: 15px;
+                align-items: center ;
 
             }
         }
@@ -40,10 +56,10 @@
 
         text-align: center;
         padding: 10px;
-        margin: 10px;
+        margin: 40px;
+        border: 2px white solid;
+        border-radius: 7px;
 
-        border: 2px  white solid;
-        transition: 1s;
 
         h3{
             font-family: 'Bruno Ace SC', cursive;
@@ -53,7 +69,7 @@
 
         }
         p{
-            color: white;
+            color:nth($colores, 1 );
 
         }
 
@@ -82,9 +98,7 @@
     background: linear-gradient(0deg, rgba(47,47,50,1) 0%, rgba(205,205,224,1) 49%, rgba(6,6,10,1) 100%); 
     
     .cuerdas{
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
+        
         @include flex(flex,space-between,center);
         flex-direction: row;
         
@@ -104,6 +118,8 @@
             @include flex(flex,space-between,center);
             flex-direction: column;
             transition: 1s;
+            
+            border-radius:7px;
 
 
 
@@ -126,7 +142,7 @@
         }
 
         .contenedor1:hover{
-            transform: scale(1.05);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
 
         }
@@ -144,6 +160,7 @@
             @include flex(flex,space-between,center);
             flex-direction: column;
             transition: 1s;
+            border-radius:7px;
 
 
 
@@ -165,7 +182,7 @@
 
         }
         .contenedor2:hover{
-            transform: scale(1.05);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
 
         }
@@ -183,6 +200,7 @@
             @include flex(flex,space-between,center);
             flex-direction: column;
             transition: 1s;
+            border-radius:7px;
 
 
 
@@ -204,7 +222,7 @@
 
         }
         .contenedor3:hover{
-            transform: scale(1.05);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
 
         }
@@ -232,6 +250,7 @@
             @include flex(flex,space-between,center);
             flex-direction: column;
             transition: 1s;
+            border-radius:7px;
 
 
 
@@ -253,7 +272,7 @@
 
         }
         .contenedor4:hover{
-            transform: scale(1.05);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
 
         }
@@ -271,6 +290,7 @@
             @include flex(flex,space-between,center);
             flex-direction: column;
             transition: 1s;
+            border-radius:7px;
 
 
 
@@ -292,7 +312,7 @@
 
         }
         .contenedor5:hover{
-            transform: scale(1.05);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
 
         }
@@ -310,6 +330,7 @@
             @include flex(flex,space-between,center);
             flex-direction: column;
             transition: 1s;
+            border-radius:7px;
 
 
 
@@ -331,7 +352,7 @@
 
         }
         .contenedor6:hover{
-            transform: scale(1.05);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
 
         }
@@ -357,6 +378,7 @@
             @include flex(flex,space-between,center);
             flex-direction: column;
             transition: 1s;
+            border-radius:7px;
 
 
 
@@ -379,7 +401,7 @@
         }
 
         .contenedor7:hover{
-            transform: scale(1.05);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
 
         }
@@ -397,6 +419,7 @@
             @include flex(flex,space-between,center);
             flex-direction: column;
             transition: 1s;
+            border-radius:7px;
 
 
 
@@ -418,7 +441,7 @@
 
         }
         .contenedor8:hover{
-            transform: scale(1.05);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
 
         }
@@ -436,6 +459,7 @@
             @include flex(flex,space-between,center);
             flex-direction: column;
             transition: 1s;
+            border-radius:7px;
 
 
 
@@ -457,7 +481,7 @@
 
         }
         .contenedor9:hover{
-            transform: scale(1.05);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
 
         }
@@ -483,6 +507,7 @@
             @include flex(flex,space-between,center);
             flex-direction: column;
             transition: 1s;
+            border-radius:7px;
 
 
 
@@ -504,7 +529,7 @@
 
         }
         .contenedor10:hover{
-            transform: scale(1.05);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
 
         }
@@ -522,6 +547,7 @@
             @include flex(flex,space-between,center);
             flex-direction: column;
             transition: 1s;
+            border-radius:7px;
 
 
 
@@ -543,7 +569,7 @@
 
         }
         .contenedor11:hover{
-            transform: scale(1.05);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
 
         }
@@ -555,12 +581,13 @@
             background-image: url("../img/microfonos.jpg") ;
             background-repeat: no-repeat;
             height: 400px;
-            background-size: cover;
+            background-size:cover;
             background-position: center;
             margin: 5px;
             @include flex(flex,space-between,center);
             flex-direction: column;
             transition: 1s;
+            border-radius:7px;
 
 
 
@@ -582,7 +609,7 @@
 
         }
         .contenedor12:hover{
-            transform: scale(1.05);
+            transform: scale(1.01);
             box-shadow: 10px 10px 8px 10px #292828;
 
         }
@@ -614,9 +641,7 @@
 
             }
             .hero_elementos{
-                // display: flex;
-                // justify-content:space-between;
-                // align-items: center;
+            
                 @include flex(flex,space-between,center);
                 padding: 10px;
                 margin-top: 20px; 
@@ -624,7 +649,7 @@
                                 font-size: 20px;
                                 color: nth($colores,1 );
                                 font-family: 'poppins';
-                                padding: 10px;
+                                padding: 20px;
                                 text-align: center;
 
                 }
@@ -634,13 +659,14 @@
         }
         .hero_contactos{
             text-align: center;
-
-
-
             padding: 10px;
-            margin: 10px;
+            margin: 40px;
+            border: 2px white solid;
+            border-radius: 7px;
+
            
-            border: 2px  white solid;
+           
+            
             h3{
                 font-family: 'Bruno Ace SC', cursive;
                 color: $color-titulo;
@@ -679,9 +705,7 @@
 .formulario{
       
         padding: 5px;
-        // align-items: center;
-        // display: flex;
-        // flex-direction: column;
+        
 
         @include flex-direction(flex,column,center);
         background: rgb(47,47,50);
@@ -698,9 +722,10 @@
 
         form{
 
-            border: 1px black solid;
-            width: 250px;
-            height: 500px;
+            border: 2px black solid;
+            border-radius: 7px;
+            width: 550px;
+            height: 450px;
             padding: 5px;
             background-color: aliceblue;
                 
@@ -708,22 +733,33 @@
 
     }
 
+    h3{
+        font-family: 'Bruno Ace SC', cursive;
+        color: $color-titulo;
+        text-align: center;
+        font-style: oblique;
+
+    }
+
     .mapa{
 
         margin: 10px;
         align-items: center;
-        padding: 50px;
+        padding:0;
         display: flex;
         justify-content: center;
+        border: 2px black solid;
+        
        
     }
 }
 
-.video{
 
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
+/*----------------------------servicio------------------------*/
+
+.servicio{
+
+    
     @include flex-direction(flex,column,center);
     align-items: center;
     background: rgb(47,47,50);
@@ -737,10 +773,37 @@
     color: $color-titulo;
     text-align: center;
     font-style: oblique;
+    text-shadow: #292828;
 
     }
-    div{
-        padding: 25px;
+    .video{
+        padding: 20px;
+        @include flex-direction(flex,row,center);
+        justify-content: space-around;
+        margin: 20px;
+        .parrafo{
+            width: 300px;
+            text-align: center;
+            margin: 40px;
+            background-color: rgba(77, 74, 74, 0.473);
+            border-radius: 7px;
+            font-family: 'Bruno Ace SC', cursive;
+            font-size: nth($font-size,2);
+            color: $color-titulo;
+            box-shadow: 10px 10px 8px 10px #292828;
+            a{
+                color:nth($colores,3);
+                padding: 5px;
+                font-style: normal;
+                font-family: 'Bruno Ace SC', cursive;
+                text-decoration: none;
+            }
+            
+
+        }
+        
+
+        
 
     }
 }

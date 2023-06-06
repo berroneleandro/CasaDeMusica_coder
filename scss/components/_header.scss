@@ -1,11 +1,10 @@
 .encabezado{
-    background: rgb(17,17,18);
-    background: radial-gradient(circle, rgba(17,17,18,1) 0%, rgba(115,115,125,1) 41%, rgba(48,48,50,1) 92%);
+    background: nth($colores,5 );
+    
     position: sticky;
     top: 0;
     display: flex;
     align-items: center;
-    /* padding: 5px; */
     grid-area: header;
     flex-direction: column;
     h1{
