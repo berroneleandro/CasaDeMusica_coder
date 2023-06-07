@@ -733,30 +733,38 @@
       flex-direction: column;
       height: auto;
       width: auto; }
+  .grid-contenedor_acercade .principal_acercade .hero h2 {
+    font-size: 35px; }
   .grid-contenedor-productos .cuerdas .contenedor1 {
-    width: 350px; }
+    width: 300px; }
   .grid-contenedor-productos .cuerdas .contenedor2 {
-    width: 350px; }
+    width: 300px; }
   .grid-contenedor-productos .cuerdas .contenedor3 {
-    width: 350px; }
+    width: 300px; }
   .grid-contenedor-productos .percucion .contenedor4 {
-    width: 350px; }
+    width: 300px; }
   .grid-contenedor-productos .percucion .contenedor5 {
-    width: 350px; }
+    width: 300px; }
   .grid-contenedor-productos .percucion .contenedor6 {
-    width: 350px; }
-  .grid-contenedor-productos .vientos .contenedor7 {
-    width: 350px; }
-  .grid-contenedor-productos .vientos .contenedor8 {
-    width: 350px; }
-  .grid-contenedor-productos .vientos .contenedor9 {
-    width: 350px; }
+    width: 300px; }
+  .grid-contenedor-productos .Vientos .contenedor7 {
+    width: 300px; }
+  .grid-contenedor-productos .Vientos .contenedor8 {
+    width: 300px; }
+  .grid-contenedor-productos .Vientos .contenedor9 {
+    width: 300px; }
   .grid-contenedor-productos .amplis .contenedor10 {
-    width: 350px; }
+    width: 300px; }
   .grid-contenedor-productos .amplis .contenedor11 {
-    width: 350px; }
+    width: 300px; }
   .grid-contenedor-productos .amplis .contenedor12 {
-    width: 350px; }
+    width: 300px; }
   .formulario .formulario_1 form {
     width: 250px;
-    height: auto; } }
+    height: auto; }
+  .servicio .video {
+    margin: 5px; }
+    .servicio .video iframe {
+      width: 300px; }
+    .servicio .video .parrafo {
+      margin: 5px; } }

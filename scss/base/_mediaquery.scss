@@ -194,55 +194,67 @@
         }
     }
     
+    .grid-contenedor_acercade{
+        .principal_acercade{
+
+            .hero{
+                h2{
+                    font-size: 35px;
+                }
+            }
+        }
+
+    }
+    
 
     .grid-contenedor-productos{
 
         .cuerdas{
             .contenedor1{
-                width: 350px;
+                width: 300px;
             }
             .contenedor2{
-                width: 350px;
+                width: 300px;
             }
             .contenedor3{
-                width: 350px;
+                width: 300px;
             }
 
         }
         .percucion{
             .contenedor4{
-                width: 350px;
+                width: 300px;
             }
             .contenedor5{
-                width: 350px;
+                width: 300px;
             }
             .contenedor6{
-                width: 350px;
+                width: 300px;
             }
 
         }
 
-        .vientos{
+        .Vientos{
             .contenedor7{
-                width: 350px;
+                width: 300px;
             }
             .contenedor8{
-                width: 350px;
+                width: 300px;
             }
             .contenedor9{
-                width: 350px;
+                width: 300px;
             }
         }
 
         .amplis{
             .contenedor10{
-                width: 350px;
+                width: 300px;
             }
             .contenedor11{
-                width: 350px;
+                width: 300px;
             }
             .contenedor12{
-                width: 350px;
+                width: 300px;
             }
 
         }
@@ -267,5 +279,21 @@
 
         }
     }
+
+    .servicio{
+       
+        .video{
+            
+            margin: 5px;
+            iframe{
+                width: 300px;
+            }
+            .parrafo{
+                margin:5px;
+            }
+        }
+    }
+
+   
    
 }
